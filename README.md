@@ -88,11 +88,11 @@
 ### 通信フロー
 
 ```
-[鑑定]    Flutter ──POST /api/reading/master──▶ Server ──▶ Gemini API ──▶ 鑑定文生成
+[鑑定]    Flutter ── 鑑定文生成API ──▶ Server ──▶ Gemini API ──▶ 鑑定文生成
 
-[チャット] Flutter ──POST /api/chat──▶ Server ──▶ Gemini API ──▶ 追加質問への回答
+[チャット] Flutter ── チャットAPI ──▶ Server ──▶ Gemini API ──▶ 追加質問への回答
 
-[課金検証] Flutter ──POST /api/verify/android──▶ Server ──▶ Google Play API ──▶ 購入検証
+[課金検証] Flutter ── 購入検証API ──▶ Server ──▶ Google Play / App Store API ──▶ 購入検証
 ```
 
 ## 技術スタック
